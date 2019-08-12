@@ -1,3 +1,3 @@
 # Asp.NETemCamadas
 
-Projeto Utilizando padrão em camdas e Bootstrap
+Projeto Utilizando padrão em camadas com Bootstrap
