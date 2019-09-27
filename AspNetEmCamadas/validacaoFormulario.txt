@@ -1,0 +1,19 @@
+ <div >
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+            <asp:TextBox runat="server" ID="txt1"/>
+            <cc1:MaskedEditExtender runat="server" TargetControlID="txt1" MaskType="Time" Mask="99:99" ID="mask1" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="txt1" ErrorMessage="este campo é obrigatorio" ValidationGroup="teste"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ErrorMessage="O valor permitido é apenas de 48h" ControlToValidate="txt1" runat="server" MinimumValue="0" MaximumValue="40" ValidationGroup="teste"/>
+            <br />
+             <asp:TextBox runat="server" ID="TextBox1"/>
+             <asp:RequiredFieldValidator runat="server" ControlToValidate="TextBox1" ErrorMessage="este campo é obrigatorio" ValidationGroup="teste"></asp:RequiredFieldValidator>
+            <cc1:MaskedEditExtender runat="server" TargetControlID="TextBox1" MaskType="Time" Mask="99:99"  ID="mask2"/>
+            <asp:RangeValidator ErrorMessage="O valor permitido é apenas de 48h" ControlToValidate="TextBox1" runat="server" MinimumValue="0" MaximumValue="40" ValidationGroup="teste"/>
+            <br />
+             <asp:TextBox runat="server" ID="TextBox2"/>
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="TextBox2" ErrorMessage="este campo é obrigatorio" ValidationGroup="teste" Display="Dynamic"></asp:RequiredFieldValidator>
+            <cc1:MaskedEditExtender runat="server" TargetControlID="TextBox2" MaskType="Time" Mask="99:99" ID="mask3" />
+            <asp:RangeValidator ErrorMessage="O valor permitido é apenas de 48h" ControlToValidate="TextBox2" runat="server" MinimumValue="0" MaximumValue="40" ValidationGroup="teste"/>
+            <br />
+
